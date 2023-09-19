@@ -1,9 +1,10 @@
 import { Avatar, Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
-import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
+import { ConnectWallet, useAddress, coinbaseWallet } from "@thirdweb-dev/react";
 import NextLink from 'next/link';
 
 export function Navbar() {
     const address = useAddress();
+    
 
     return (
         <Box maxW={"1200px"} m={"auto"} py={"10px"}px={"40px"}>
